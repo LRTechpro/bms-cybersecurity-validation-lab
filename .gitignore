@@ -10,3 +10,7 @@ venv/
 *.key
 private_keys/
 bms_security_lab/evidence/checkpoint.json
+
+bms_security_lab/evidence/capstone/checkpoint.json
+bms_security_lab/evidence/capstone/*.stale.*
+python_framework/

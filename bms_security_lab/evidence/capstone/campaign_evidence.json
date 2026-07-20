@@ -1,0 +1,1813 @@
+{
+  "campaign_digest": "7466e7c8a99058d3a6aa73752357f6f58eb9d207169e66657bcb3ab484070191",
+  "record_count": 54,
+  "records": [
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-002",
+        "AC-003"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-001",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "sensor-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Valid battery reading accepted"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "GENESIS",
+      "reasons": [],
+      "record_hash": "859db69720e141af1ec3e7b4faa98cff03bed4e763e4b990251c898da18f9975",
+      "requirement_id": "BMS-SEC-SEN-001",
+      "status": "PASS",
+      "tara_id": "TARA-001",
+      "test_id": "SENS-001",
+      "timestamp_s": 1.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-002",
+        "AC-003"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-001",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "sensor-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "SOC upper boundary validated"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "859db69720e141af1ec3e7b4faa98cff03bed4e763e4b990251c898da18f9975",
+      "reasons": [],
+      "record_hash": "33ffb9ca3a72d0351ef3f6c07d795951b01e7d5c16d203bc9432a4cf1b98f237",
+      "requirement_id": "BMS-SEC-SEN-001",
+      "status": "PASS",
+      "tara_id": "TARA-001",
+      "test_id": "SENS-002",
+      "timestamp_s": 2.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-002",
+        "AC-003"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-001",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "sensor-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Out-of-range SOC rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "33ffb9ca3a72d0351ef3f6c07d795951b01e7d5c16d203bc9432a4cf1b98f237",
+      "reasons": [],
+      "record_hash": "1003a6711d9b97f1e8406932266b87440015c5a64a8b0863994a4a1bfcbb1444",
+      "requirement_id": "BMS-SEC-SEN-001",
+      "status": "PASS",
+      "tara_id": "TARA-001",
+      "test_id": "SENS-003",
+      "timestamp_s": 3.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-002",
+        "AC-003"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-001",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "sensor-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Implausible SOC rate rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "1003a6711d9b97f1e8406932266b87440015c5a64a8b0863994a4a1bfcbb1444",
+      "reasons": [],
+      "record_hash": "aec39322a4f3fbcec747d37bd0e3f8c06b16ab6c477903840d64ec45b9c38c9c",
+      "requirement_id": "BMS-SEC-SEN-001",
+      "status": "PASS",
+      "tara_id": "TARA-001",
+      "test_id": "SENS-004",
+      "timestamp_s": 4.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-002",
+        "AC-003"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-001",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "sensor-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Cross-signal disagreement rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "aec39322a4f3fbcec747d37bd0e3f8c06b16ab6c477903840d64ec45b9c38c9c",
+      "reasons": [],
+      "record_hash": "848059d72106841ee034655c4496c429cf81c545a8b5ca6706e1b4a341995454",
+      "requirement_id": "BMS-SEC-SEN-001",
+      "status": "PASS",
+      "tara_id": "TARA-001",
+      "test_id": "SENS-005",
+      "timestamp_s": 5.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-003"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-001",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "FAIL",
+      "input_data": {
+        "category": "sensor-security",
+        "retest_root_cause": null,
+        "root_cause_key": "TRUSTED-STATE-GATE-BYPASS",
+        "scenario": "Vulnerable baseline permits spoofed SOC state update"
+      },
+      "observed_result": "Spoofed SOC reached the vulnerable baseline state path.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "848059d72106841ee034655c4496c429cf81c545a8b5ca6706e1b4a341995454",
+      "reasons": [
+        "Input trust gate was bypassed in the designed baseline."
+      ],
+      "record_hash": "f8a28c5a96b6c4ad721bd6e0da920a67c25fd24efc66ce6a8a8feeede54aa204",
+      "requirement_id": "BMS-SEC-SEN-001",
+      "status": "FAIL",
+      "tara_id": "TARA-001",
+      "test_id": "SENS-006",
+      "timestamp_s": 6.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-007"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-001",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "communication-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Normal sequence accepted"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "f8a28c5a96b6c4ad721bd6e0da920a67c25fd24efc66ce6a8a8feeede54aa204",
+      "reasons": [],
+      "record_hash": "459fdfc09b83fa3e793ca92d4b3c1debc46b974520b68a4c6b5b3742215432df",
+      "requirement_id": "BMS-SEC-COM-001",
+      "status": "PASS",
+      "tara_id": "TARA-001",
+      "test_id": "COMM-001",
+      "timestamp_s": 7.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-007"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-001",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "communication-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Duplicate sequence rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "459fdfc09b83fa3e793ca92d4b3c1debc46b974520b68a4c6b5b3742215432df",
+      "reasons": [],
+      "record_hash": "65bd44c2fa67cb107640710a4f2b321c1514a0eddab17737247d82c35cf6b36d",
+      "requirement_id": "BMS-SEC-COM-001",
+      "status": "PASS",
+      "tara_id": "TARA-001",
+      "test_id": "COMM-002",
+      "timestamp_s": 8.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-007"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-001",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "communication-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Counter rollback rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "65bd44c2fa67cb107640710a4f2b321c1514a0eddab17737247d82c35cf6b36d",
+      "reasons": [],
+      "record_hash": "226fa1444c6b82da124726753ebb26121284b281a91a23d10931e9aac84d451c",
+      "requirement_id": "BMS-SEC-COM-001",
+      "status": "PASS",
+      "tara_id": "TARA-001",
+      "test_id": "COMM-003",
+      "timestamp_s": 9.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-007"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-001",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "communication-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Counter jump alerted"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "226fa1444c6b82da124726753ebb26121284b281a91a23d10931e9aac84d451c",
+      "reasons": [],
+      "record_hash": "b4a6921a5c0ca3104d86a8e128a7502f362aca8b17c0ccca834cb3b8fba4ccc7",
+      "requirement_id": "BMS-SEC-COM-001",
+      "status": "PASS",
+      "tara_id": "TARA-001",
+      "test_id": "COMM-004",
+      "timestamp_s": 10.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-007"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-001",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "communication-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Defined wraparound accepted"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "b4a6921a5c0ca3104d86a8e128a7502f362aca8b17c0ccca834cb3b8fba4ccc7",
+      "reasons": [],
+      "record_hash": "bb3ee6f94a0dca27c28eb5bec7474fd2c56ca3f216f77ae3c51e1ec4356a458d",
+      "requirement_id": "BMS-SEC-COM-001",
+      "status": "PASS",
+      "tara_id": "TARA-001",
+      "test_id": "COMM-005",
+      "timestamp_s": 11.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-007"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-001",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "communication-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Old timestamp rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "bb3ee6f94a0dca27c28eb5bec7474fd2c56ca3f216f77ae3c51e1ec4356a458d",
+      "reasons": [],
+      "record_hash": "9f451039fcca2c2ee7ffbb454ec380848a6d75c9105f4c47ba4853a397093893",
+      "requirement_id": "BMS-SEC-COM-001",
+      "status": "PASS",
+      "tara_id": "TARA-001",
+      "test_id": "COMM-006",
+      "timestamp_s": 12.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-007"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-001",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "communication-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Unknown source rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "9f451039fcca2c2ee7ffbb454ec380848a6d75c9105f4c47ba4853a397093893",
+      "reasons": [],
+      "record_hash": "b57e5e3d0e2fede2af88c09708e35fff7cc68756a25d107a1797b5bdcb8f951e",
+      "requirement_id": "BMS-SEC-COM-001",
+      "status": "PASS",
+      "tara_id": "TARA-001",
+      "test_id": "COMM-007",
+      "timestamp_s": 13.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-007"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-001",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "communication-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Revoked source rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "b57e5e3d0e2fede2af88c09708e35fff7cc68756a25d107a1797b5bdcb8f951e",
+      "reasons": [],
+      "record_hash": "e3acd9d81d7a0f9d82a77d3dc6f3da7e85f46654707c0ac373b995d67f6faced",
+      "requirement_id": "BMS-SEC-COM-001",
+      "status": "PASS",
+      "tara_id": "TARA-001",
+      "test_id": "COMM-008",
+      "timestamp_s": 14.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-007"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-006",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "frame-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Valid frame decoded"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "e3acd9d81d7a0f9d82a77d3dc6f3da7e85f46654707c0ac373b995d67f6faced",
+      "reasons": [],
+      "record_hash": "7a49b55761592b40b0d6a2114f6772b491a57cf7456b0f7e7c87337b4bb7cdd6",
+      "requirement_id": "BMS-SEC-COM-003",
+      "status": "PASS",
+      "tara_id": "TARA-006",
+      "test_id": "CAN-001",
+      "timestamp_s": 15.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-007"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-006",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "frame-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Short payload rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "7a49b55761592b40b0d6a2114f6772b491a57cf7456b0f7e7c87337b4bb7cdd6",
+      "reasons": [],
+      "record_hash": "22e95bce4b8a1d47c6492390a09389a6864d6a4115ce004c48c60a08ea92bc98",
+      "requirement_id": "BMS-SEC-COM-003",
+      "status": "PASS",
+      "tara_id": "TARA-006",
+      "test_id": "CAN-002",
+      "timestamp_s": 16.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-007"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-006",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "frame-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Long payload rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "22e95bce4b8a1d47c6492390a09389a6864d6a4115ce004c48c60a08ea92bc98",
+      "reasons": [],
+      "record_hash": "d4c4216d7ffe49a99d30e9cfec80802deb0670413408804dd61b496efacba22f",
+      "requirement_id": "BMS-SEC-COM-003",
+      "status": "PASS",
+      "tara_id": "TARA-006",
+      "test_id": "CAN-003",
+      "timestamp_s": 17.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-007"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-006",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "frame-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Unexpected identifier rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "d4c4216d7ffe49a99d30e9cfec80802deb0670413408804dd61b496efacba22f",
+      "reasons": [],
+      "record_hash": "2f8669c376eb7119d278ead0454575b3ee66a13827277697a6d94cfc64656908",
+      "requirement_id": "BMS-SEC-COM-003",
+      "status": "PASS",
+      "tara_id": "TARA-006",
+      "test_id": "CAN-004",
+      "timestamp_s": 18.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-007"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-006",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "frame-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Invalid CRC or MAC metadata rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "2f8669c376eb7119d278ead0454575b3ee66a13827277697a6d94cfc64656908",
+      "reasons": [],
+      "record_hash": "a6f7df4318d55e180637e7cdcfc56eb09222de7e33167d953631caf6d36ea252",
+      "requirement_id": "BMS-SEC-COM-003",
+      "status": "PASS",
+      "tara_id": "TARA-006",
+      "test_id": "CAN-005",
+      "timestamp_s": 19.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-007",
+        "AC-008",
+        "AC-009"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-006",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "availability",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Periodic message arrives on schedule"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "a6f7df4318d55e180637e7cdcfc56eb09222de7e33167d953631caf6d36ea252",
+      "reasons": [],
+      "record_hash": "ee7c08d1bac9d0540cd13ff979c164f060d54e8428667f9bd13037cd870107e3",
+      "requirement_id": "BMS-SEC-AVA-001",
+      "status": "PASS",
+      "tara_id": "TARA-006",
+      "test_id": "AVAIL-001",
+      "timestamp_s": 20.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-007",
+        "AC-008",
+        "AC-009"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-006",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "availability",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Missing message triggers alert"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "ee7c08d1bac9d0540cd13ff979c164f060d54e8428667f9bd13037cd870107e3",
+      "reasons": [],
+      "record_hash": "707d94ca8d06e59bd6eceab40ed978d469bef55c772f5f8bfcf81416ef462c09",
+      "requirement_id": "BMS-SEC-AVA-001",
+      "status": "PASS",
+      "tara_id": "TARA-006",
+      "test_id": "AVAIL-002",
+      "timestamp_s": 21.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-007",
+        "AC-008",
+        "AC-009"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-006",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "availability",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Flood rate is limited"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "707d94ca8d06e59bd6eceab40ed978d469bef55c772f5f8bfcf81416ef462c09",
+      "reasons": [],
+      "record_hash": "de7104fba4465ed6afd7ed590a709d8ea2b12c720b7f2a26399ecbba28091e61",
+      "requirement_id": "BMS-SEC-AVA-001",
+      "status": "PASS",
+      "tara_id": "TARA-006",
+      "test_id": "AVAIL-003",
+      "timestamp_s": 22.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-007",
+        "AC-008",
+        "AC-009"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-006",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "availability",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Processing latency triggers degraded response"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "de7104fba4465ed6afd7ed590a709d8ea2b12c720b7f2a26399ecbba28091e61",
+      "reasons": [],
+      "record_hash": "241cd0e153f449c3045ca0010a85df006934ae26f2a1c741972e1a12bb57a544",
+      "requirement_id": "BMS-SEC-AVA-001",
+      "status": "PASS",
+      "tara_id": "TARA-006",
+      "test_id": "AVAIL-004",
+      "timestamp_s": 23.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-004",
+        "AC-008"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-002",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "command-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Authorized contactor open accepted"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "241cd0e153f449c3045ca0010a85df006934ae26f2a1c741972e1a12bb57a544",
+      "reasons": [],
+      "record_hash": "6776bb57735af801e4435b64d0c49f50594ca70e9c942c44509fad2a3fc959eb",
+      "requirement_id": "BMS-SEC-CMD-001",
+      "status": "PASS",
+      "tara_id": "TARA-002",
+      "test_id": "CMD-001",
+      "timestamp_s": 24.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-004",
+        "AC-008"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-002",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "command-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Unauthorized close rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "6776bb57735af801e4435b64d0c49f50594ca70e9c942c44509fad2a3fc959eb",
+      "reasons": [],
+      "record_hash": "2177c2bf47d482b027150960e8823dfeecafaf3b09814a6898852431876fcb11",
+      "requirement_id": "BMS-SEC-CMD-001",
+      "status": "PASS",
+      "tara_id": "TARA-002",
+      "test_id": "CMD-002",
+      "timestamp_s": 25.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-004",
+        "AC-008"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-002",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "command-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Close before precharge rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "2177c2bf47d482b027150960e8823dfeecafaf3b09814a6898852431876fcb11",
+      "reasons": [],
+      "record_hash": "93aa8515edd60507ab5aa393fd95a44bec5b8aedc1593ec4f585ef22267c8530",
+      "requirement_id": "BMS-SEC-CMD-001",
+      "status": "PASS",
+      "tara_id": "TARA-002",
+      "test_id": "CMD-003",
+      "timestamp_s": 26.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-004",
+        "AC-008"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-002",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "command-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Charge enable during fault rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "93aa8515edd60507ab5aa393fd95a44bec5b8aedc1593ec4f585ef22267c8530",
+      "reasons": [],
+      "record_hash": "d38193944eb96729453a8165a853032a4deeccae4074d45b160bc9d2b9687086",
+      "requirement_id": "BMS-SEC-CMD-001",
+      "status": "PASS",
+      "tara_id": "TARA-002",
+      "test_id": "CMD-004",
+      "timestamp_s": 27.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-004",
+        "AC-008"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-002",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "command-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Replay shutdown rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "d38193944eb96729453a8165a853032a4deeccae4074d45b160bc9d2b9687086",
+      "reasons": [],
+      "record_hash": "f9e2f10ab08346a6a67fff26a2ac9770418c0ca871bd977135d6868e3a628548",
+      "requirement_id": "BMS-SEC-CMD-001",
+      "status": "PASS",
+      "tara_id": "TARA-002",
+      "test_id": "CMD-005",
+      "timestamp_s": 28.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-004",
+        "AC-008"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-002",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "command-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "SAFE state allows recovery action only"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "f9e2f10ab08346a6a67fff26a2ac9770418c0ca871bd977135d6868e3a628548",
+      "reasons": [],
+      "record_hash": "d459da149f2e804432d1a3e3a0317a14a688c9c3461742e3462c9541e682752f",
+      "requirement_id": "BMS-SEC-CMD-001",
+      "status": "PASS",
+      "tara_id": "TARA-002",
+      "test_id": "CMD-006",
+      "timestamp_s": 29.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-005",
+        "AC-009",
+        "AC-010"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-003",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "diagnostic-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Default-session read accepted"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "d459da149f2e804432d1a3e3a0317a14a688c9c3461742e3462c9541e682752f",
+      "reasons": [],
+      "record_hash": "1f8c7440aecc64ad7246b0d240e17765e130f19e4c081382ae46072d1bd67c87",
+      "requirement_id": "BMS-SEC-DIA-001",
+      "status": "PASS",
+      "tara_id": "TARA-003",
+      "test_id": "DIAG-001",
+      "timestamp_s": 30.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-005",
+        "AC-009",
+        "AC-010"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-003",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "diagnostic-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Default-session write rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "1f8c7440aecc64ad7246b0d240e17765e130f19e4c081382ae46072d1bd67c87",
+      "reasons": [],
+      "record_hash": "5325012a5af0d4f4a7be081f858d9b64ef68921f97b4416b74f8b4df24abc954",
+      "requirement_id": "BMS-SEC-DIA-001",
+      "status": "PASS",
+      "tara_id": "TARA-003",
+      "test_id": "DIAG-002",
+      "timestamp_s": 31.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-005",
+        "AC-009",
+        "AC-010"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-003",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "diagnostic-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Programming before unlock rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "5325012a5af0d4f4a7be081f858d9b64ef68921f97b4416b74f8b4df24abc954",
+      "reasons": [],
+      "record_hash": "96babbc01da7174d29ede71748191aa82cceeafc6fd31e0b0a2b7309d3f25dfc",
+      "requirement_id": "BMS-SEC-DIA-001",
+      "status": "PASS",
+      "tara_id": "TARA-003",
+      "test_id": "DIAG-003",
+      "timestamp_s": 32.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-005",
+        "AC-009",
+        "AC-010"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-003",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "diagnostic-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Invalid-key lockout applied"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "96babbc01da7174d29ede71748191aa82cceeafc6fd31e0b0a2b7309d3f25dfc",
+      "reasons": [],
+      "record_hash": "33a4bac55809345d2aa797418039cef3f08a40af0518c5b180a6f2e0ec38420f",
+      "requirement_id": "BMS-SEC-DIA-001",
+      "status": "PASS",
+      "tara_id": "TARA-003",
+      "test_id": "DIAG-004",
+      "timestamp_s": 33.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-005",
+        "AC-009",
+        "AC-010"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-003",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "diagnostic-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Reset during transfer rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "33a4bac55809345d2aa797418039cef3f08a40af0518c5b180a6f2e0ec38420f",
+      "reasons": [],
+      "record_hash": "d9d47dcee11d2e1f55a7e0be59597de2b65b025cfb7ca8b699f3360f9bb43f78",
+      "requirement_id": "BMS-SEC-DIA-001",
+      "status": "PASS",
+      "tara_id": "TARA-003",
+      "test_id": "DIAG-005",
+      "timestamp_s": 34.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-005",
+        "AC-009",
+        "AC-010"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-003",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "diagnostic-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Ordered secure programming accepted"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "d9d47dcee11d2e1f55a7e0be59597de2b65b025cfb7ca8b699f3360f9bb43f78",
+      "reasons": [],
+      "record_hash": "52594175fd6d39b016ed69cc80034992dfe37f394606f5e0a38115b1a828e792",
+      "requirement_id": "BMS-SEC-DIA-001",
+      "status": "PASS",
+      "tara_id": "TARA-003",
+      "test_id": "DIAG-006",
+      "timestamp_s": 35.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-006",
+        "AC-009"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-005",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "configuration-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Approved configuration accepted"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "52594175fd6d39b016ed69cc80034992dfe37f394606f5e0a38115b1a828e792",
+      "reasons": [],
+      "record_hash": "72420873e11f16d246ed00e623a0061c0de9fed4674783c59f63e94b99123256",
+      "requirement_id": "BMS-SEC-CFG-001",
+      "status": "PASS",
+      "tara_id": "TARA-005",
+      "test_id": "CFG-001",
+      "timestamp_s": 36.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-006",
+        "AC-009"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-005",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "configuration-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Unauthorized capacity change rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "72420873e11f16d246ed00e623a0061c0de9fed4674783c59f63e94b99123256",
+      "reasons": [],
+      "record_hash": "763dd79103cffb6046ee43f38edbbbef897c67ec9f4e1d623af9b50fed50262d",
+      "requirement_id": "BMS-SEC-CFG-001",
+      "status": "PASS",
+      "tara_id": "TARA-005",
+      "test_id": "CFG-002",
+      "timestamp_s": 37.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-006",
+        "AC-009"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-005",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "configuration-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Cell-count mismatch rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "763dd79103cffb6046ee43f38edbbbef897c67ec9f4e1d623af9b50fed50262d",
+      "reasons": [],
+      "record_hash": "69ccf55aa6a88632146344f940b996f2adc8c0a8317bd38f67b559ed1a22f093",
+      "requirement_id": "BMS-SEC-CFG-001",
+      "status": "PASS",
+      "tara_id": "TARA-005",
+      "test_id": "CFG-003",
+      "timestamp_s": 38.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-006",
+        "AC-009"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-005",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "configuration-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Sensor scaling change rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "69ccf55aa6a88632146344f940b996f2adc8c0a8317bd38f67b559ed1a22f093",
+      "reasons": [],
+      "record_hash": "50071303b5e2a83a83265f513b4fc0bbef909fc6616f376214c9a329cf06e8a4",
+      "requirement_id": "BMS-SEC-CFG-001",
+      "status": "PASS",
+      "tara_id": "TARA-005",
+      "test_id": "CFG-004",
+      "timestamp_s": 39.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-006",
+        "AC-009"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-005",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "configuration-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Authorized version upgrade audited"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "50071303b5e2a83a83265f513b4fc0bbef909fc6616f376214c9a329cf06e8a4",
+      "reasons": [],
+      "record_hash": "481b921a95a00f09b74d7ccea86f3b1e4b7223ff13df8a49d9fc4759ffb136e2",
+      "requirement_id": "BMS-SEC-CFG-001",
+      "status": "PASS",
+      "tara_id": "TARA-005",
+      "test_id": "CFG-005",
+      "timestamp_s": 40.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-006",
+        "AC-008",
+        "AC-010"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-004",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "firmware-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Trusted signed firmware accepted"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "481b921a95a00f09b74d7ccea86f3b1e4b7223ff13df8a49d9fc4759ffb136e2",
+      "reasons": [],
+      "record_hash": "e4d2847e8201127ef2a0bb23ed7ee43a29dffab8d44c6556f17fe8d3553341ed",
+      "requirement_id": "BMS-SEC-FW-001",
+      "status": "PASS",
+      "tara_id": "TARA-004",
+      "test_id": "FW-001",
+      "timestamp_s": 41.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-006",
+        "AC-008",
+        "AC-010"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-004",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "firmware-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Invalid signature rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "e4d2847e8201127ef2a0bb23ed7ee43a29dffab8d44c6556f17fe8d3553341ed",
+      "reasons": [],
+      "record_hash": "5898b426f795f27ea4b12611d298d620106c2bd58cd0a742f91b865b182918b6",
+      "requirement_id": "BMS-SEC-FW-001",
+      "status": "PASS",
+      "tara_id": "TARA-004",
+      "test_id": "FW-002",
+      "timestamp_s": 42.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-006",
+        "AC-008",
+        "AC-010"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-004",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "firmware-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Corrupt image hash rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "5898b426f795f27ea4b12611d298d620106c2bd58cd0a742f91b865b182918b6",
+      "reasons": [],
+      "record_hash": "c01259e2561251d8031afa1c6677440c7e8bd67f779edca1ee862097542cdff2",
+      "requirement_id": "BMS-SEC-FW-001",
+      "status": "PASS",
+      "tara_id": "TARA-004",
+      "test_id": "FW-003",
+      "timestamp_s": 43.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-006",
+        "AC-008",
+        "AC-010"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-004",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "firmware-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Rollback rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "c01259e2561251d8031afa1c6677440c7e8bd67f779edca1ee862097542cdff2",
+      "reasons": [],
+      "record_hash": "1bf3c3762a11d00bd02f028ca0f0f1cf9286da609474bc3fde0ab9d0ca0e1b22",
+      "requirement_id": "BMS-SEC-FW-001",
+      "status": "PASS",
+      "tara_id": "TARA-004",
+      "test_id": "FW-004",
+      "timestamp_s": 44.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-006",
+        "AC-008",
+        "AC-010"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-004",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "firmware-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Interrupted install enters verified recovery"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "1bf3c3762a11d00bd02f028ca0f0f1cf9286da609474bc3fde0ab9d0ca0e1b22",
+      "reasons": [],
+      "record_hash": "631bb57c64617f7fba731c7393c93dd4ea398bd2ccad895fab4137ccee687dec",
+      "requirement_id": "BMS-SEC-FW-001",
+      "status": "PASS",
+      "tara_id": "TARA-004",
+      "test_id": "FW-005",
+      "timestamp_s": 45.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-007",
+        "AC-010"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-007",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "ot-network-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Authenticated monitor read accepted"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "631bb57c64617f7fba731c7393c93dd4ea398bd2ccad895fab4137ccee687dec",
+      "reasons": [],
+      "record_hash": "0aeb139b5a261d0e2f1a073705d974e4b500e581eab7d5d4652b53a62c2a21b1",
+      "requirement_id": "BMS-SEC-OT-001",
+      "status": "PASS",
+      "tara_id": "TARA-007",
+      "test_id": "NET-001",
+      "timestamp_s": 46.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-007",
+        "AC-010"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-007",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "ot-network-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Read-only write rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "0aeb139b5a261d0e2f1a073705d974e4b500e581eab7d5d4652b53a62c2a21b1",
+      "reasons": [],
+      "record_hash": "fce5dbd4766202acdc58821650e06c587a0f6e8c03a0807ebb02f05a569db28d",
+      "requirement_id": "BMS-SEC-OT-001",
+      "status": "PASS",
+      "tara_id": "TARA-007",
+      "test_id": "NET-002",
+      "timestamp_s": 47.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-007",
+        "AC-010"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-007",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "ot-network-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Revoked certificate rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "fce5dbd4766202acdc58821650e06c587a0f6e8c03a0807ebb02f05a569db28d",
+      "reasons": [],
+      "record_hash": "1d21716d4c979d86e72951db996e1a1966623bd3661d96725f3ce7aa6cc2020d",
+      "requirement_id": "BMS-SEC-OT-001",
+      "status": "PASS",
+      "tara_id": "TARA-007",
+      "test_id": "NET-003",
+      "timestamp_s": 48.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-007",
+        "AC-010"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-007",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "ot-network-security",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Unexpected network zone rejected"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "1d21716d4c979d86e72951db996e1a1966623bd3661d96725f3ce7aa6cc2020d",
+      "reasons": [],
+      "record_hash": "cd82a77cc8ec376ce20106eebe195049d92ffec3ce7763d6a6bddd934a06c71d",
+      "requirement_id": "BMS-SEC-OT-001",
+      "status": "PASS",
+      "tara_id": "TARA-007",
+      "test_id": "NET-004",
+      "timestamp_s": 49.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-008",
+        "AC-009"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-008",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "safe-state",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Temperature-data loss invokes mode-aware safe action"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "cd82a77cc8ec376ce20106eebe195049d92ffec3ce7763d6a6bddd934a06c71d",
+      "reasons": [],
+      "record_hash": "fe4d822e5dae92541e31cf688763e4e53950e1807f92d4812f7887e8f12c6545",
+      "requirement_id": "BMS-SEC-REC-001",
+      "status": "PASS",
+      "tara_id": "TARA-008",
+      "test_id": "SAFE-001",
+      "timestamp_s": 50.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-008",
+        "AC-009"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-008",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "safe-state",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "Unauthorized close preserves safe state"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "fe4d822e5dae92541e31cf688763e4e53950e1807f92d4812f7887e8f12c6545",
+      "reasons": [],
+      "record_hash": "a66702e1b5d168a3606f612ed17ef9eed7a6ae08d5c00c7dc8622de35a8d01bd",
+      "requirement_id": "BMS-SEC-REC-001",
+      "status": "PASS",
+      "tara_id": "TARA-008",
+      "test_id": "SAFE-002",
+      "timestamp_s": 51.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-008",
+        "AC-009"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-008",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "safe-state",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "SOC confidence loss marks estimate stale"
+      },
+      "observed_result": "Configured control produced the required deterministic outcome.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "a66702e1b5d168a3606f612ed17ef9eed7a6ae08d5c00c7dc8622de35a8d01bd",
+      "reasons": [],
+      "record_hash": "c3b16264a9155d4828074e9766c93edc5ac3a8bfa59620acf7d1659988379b1c",
+      "requirement_id": "BMS-SEC-REC-001",
+      "status": "PASS",
+      "tara_id": "TARA-008",
+      "test_id": "SAFE-003",
+      "timestamp_s": 52.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-008",
+        "AC-009"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-008",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "ERROR",
+      "input_data": {
+        "category": "safe-state",
+        "retest_root_cause": null,
+        "root_cause_key": null,
+        "scenario": "One campaign executor raises an unexpected exception"
+      },
+      "observed_result": "Campaign executor raised an exception.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "c3b16264a9155d4828074e9766c93edc5ac3a8bfa59620acf7d1659988379b1c",
+      "reasons": [
+        "RuntimeError: simulated campaign execution failure"
+      ],
+      "record_hash": "754aaf535e82349ecf8940e81e8ad7e3b6cf9aef83932a690dba7bd2ac3bdd68",
+      "requirement_id": "BMS-SEC-EVI-002",
+      "status": "ERROR",
+      "tara_id": "TARA-008",
+      "test_id": "SAFE-004",
+      "timestamp_s": 53.0
+    },
+    {
+      "architecture_control_ids": [
+        "AC-001",
+        "AC-003",
+        "AC-009"
+      ],
+      "campaign_id": "BMS-CAPSTONE-001",
+      "code_version": "f547b6e",
+      "cybersecurity_goal_id": "CG-001",
+      "environment": "pure-python-simulation",
+      "evidence_paths": [
+        "bms_security_lab\\evidence\\capstone\\evidence.jsonl"
+      ],
+      "expected_result": "PASS",
+      "input_data": {
+        "category": "remediation-retest",
+        "retest_root_cause": "TRUSTED-STATE-GATE-BYPASS",
+        "root_cause_key": null,
+        "scenario": "Retest after enforcing validation before trusted-state update"
+      },
+      "observed_result": "Spoofed SOC was rejected and trusted state remained unchanged.",
+      "preconditions": {
+        "authorized_simulation": true,
+        "campaign_signature": "08e6f21db1de5317d410ed376705773644868f43f009d0c6efe5692933d6eafc"
+      },
+      "previous_record_hash": "754aaf535e82349ecf8940e81e8ad7e3b6cf9aef83932a690dba7bd2ac3bdd68",
+      "reasons": [],
+      "record_hash": "dcc0178159b8431128ba14c0ace456f057e6a265ac9c548297a1b1832eb94dfb",
+      "requirement_id": "BMS-SEC-SEN-001",
+      "status": "PASS",
+      "tara_id": "TARA-001",
+      "test_id": "RETEST-SENS-006",
+      "timestamp_s": 54.0
+    }
+  ]
+}
