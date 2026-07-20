@@ -1,0 +1,11 @@
+control_id,control_name,allocation,responsibility_and_design_rationale,status
+AC-001,Input Trust Gate,CMU/BMS data-ingress layer,"Validate schema, range, identifier, source identity, authentication, and freshness before data is eligible for trusted processing.",BASELINED
+AC-002,Plausibility and Redundancy,BMS application,"Apply configured rate-of-change, cross-signal, cell-spread, and redundant-source rules.",BASELINED
+AC-003,Trusted State Boundary,BMS state service,"Update trusted state only after the complete required validation set passes; retain previous trusted state otherwise.",BASELINED
+AC-004,Command Authorization and State Machine,BMS control layer,"Separate validation from execution and require identity, authentication, freshness, authorization, and operating-state preconditions.",BASELINED
+AC-005,Diagnostic Security Controller,UDS/service layer,"Enforce session, security, role, and operating-state matrices; ordered procedures; attempt counters; delay or lockout; and safe timeout behavior.",BASELINED
+AC-006,Secure Update and Configuration,Boot/update/configuration services,"Verify signer, signature or hash, target, hardware or profile compatibility, security version, installation preconditions, and recovery state.",BASELINED
+AC-007,Network Resilience and Segmentation,Gateway communication service and optional EMS,"Apply allowlists, timeouts, rate limits, bounded queues and stores, zone and role policy, and explicit protocol parsing.",BASELINED
+AC-008,Safe State and Controlled Recovery,BMS safety/control manager,"Map loss of confidence to deterministic operating-mode-dependent degraded or safe actions from the safety-approved mapping; preserve cooling and evidence; and authorize recovery transitions.",BASELINED
+AC-009,Evidence Pipeline,Runner event sink and evidence store,"Record complete traceable results, isolate framework errors, bound event growth, and prohibit false PASS or finding closure without retest.",BASELINED
+AC-010,Key and Cryptographic Services,Secure-boot verifier and production HSM or secure-element concept,"Protect keys and provide hash, MAC, signature, and certificate operations. The lab uses vetted local cryptographic verification and disposable keys but does not reproduce production key management or a silicon root of trust.",BASELINED

@@ -1,0 +1,10 @@
+goal_id,goal_name,cybersecurity_goal,source_tara_ids,status
+CG-001,Measurement and state integrity,"Preserve the integrity, plausibility, authenticity, and freshness of safety-relevant BMS measurements and derived battery state.",TARA-001,BASELINED
+CG-002,Authorized control,"Prevent unauthorized, stale, or state-inappropriate execution of contactor, precharge, charge or discharge, power-limit, and cooling commands.",TARA-002,BASELINED
+CG-003,Secure diagnostics,"Restrict diagnostic services, programming, routines, writes, resets, and fault clearing to authorized identities, states, and ordered procedures.",TARA-003,BASELINED
+CG-004,Trusted software,"Ensure BMS software is authentic, intact, compatible, non-downgraded, and recoverable before activation.",TARA-004,BASELINED
+CG-005,Trusted configuration,"Prevent or detect unauthorized, incompatible, or internally inconsistent configuration and calibration changes.",TARA-005,BASELINED
+CG-006,Communication resilience,"Maintain timely critical communication and bounded, deterministic behavior during loss, malformed traffic, flooding, or processing stress.",TARA-006,BASELINED
+CG-007,Controlled remote and OT access,"Restrict BESS remote and site access to authenticated, authorized, and appropriately segmented identities, roles, functions, and zones.",TARA-007,BASELINED
+CG-008,Evidence and recovery,"Preserve trustworthy security events and engineering evidence and permit only controlled, authorized recovery and finding closure.",TARA-008,BASELINED
+CG-009,Protected debug and boot access,"Restrict debug, bootloader, and console interfaces to authorized, authenticated, and lifecycle-appropriate use.",TARA-009,BASELINED
