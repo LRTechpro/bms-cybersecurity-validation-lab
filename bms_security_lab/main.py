@@ -9,8 +9,12 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output-dir",
-        default="bms_security_lab/evidence/capstone",
-        help="Directory for checkpoint, evidence, and reports.",
+        default="bms_security_lab/evidence/runs",
+        help=(
+            "Directory for runtime checkpoint, evidence, and reports. "
+            "Defaults to a gitignored runs directory so the committed "
+            "capstone evidence is never overwritten."
+        ),
     )
     parser.add_argument(
         "--max-cases",
