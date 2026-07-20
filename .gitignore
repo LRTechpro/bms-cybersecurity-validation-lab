@@ -6,4 +6,7 @@ __pycache__/
 .venv/
 venv/
 *.zip
+*.pem
+*.key
+private_keys/
 bms_security_lab/evidence/checkpoint.json
