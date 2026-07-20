@@ -69,7 +69,7 @@ python -m pytest -q
 python -m bms_security_lab.main --code-version local-build
 ```
 
-Generated files are stored under `bms_security_lab/evidence/capstone/`:
+Runtime output is written to a gitignored `bms_security_lab/evidence/runs/` directory so the committed capstone evidence is never overwritten:
 
 ```text
 checkpoint.json
@@ -77,6 +77,14 @@ campaign_evidence.json
 evidence.jsonl
 campaign_report.md
 ```
+
+The released capstone evidence under `bms_security_lab/evidence/capstone/` is the preserved v1.0.0 reference record. To reproduce and re-verify it in place, point the runner at that directory with the matching code version:
+
+```powershell
+python -m bms_security_lab.main --output-dir bms_security_lab/evidence/capstone --code-version f547b6e
+```
+
+The run resumes the recorded chain, re-executes nothing, and reports the same campaign digest. A different code version archives the prior chain to `evidence.stale.jsonl` and starts a fresh run rather than modifying the released evidence.
 
 ## Demonstrate interruption and resume
 
@@ -86,7 +94,7 @@ Run only 20 new cases:
 python -m bms_security_lab.main --max-cases 20 --code-version local-build
 ```
 
-Run the same command without `--max-cases` to resume:
+Run the same command without `--max-cases` to resume the remaining cases in the same runs directory:
 
 ```powershell
 python -m bms_security_lab.main --code-version local-build

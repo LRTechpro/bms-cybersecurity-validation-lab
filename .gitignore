@@ -14,3 +14,6 @@ bms_security_lab/evidence/checkpoint.json
 bms_security_lab/evidence/capstone/checkpoint.json
 bms_security_lab/evidence/capstone/*.stale.*
 python_framework/
+
+# Runtime campaign output (committed capstone evidence is the released record)
+bms_security_lab/evidence/runs/
