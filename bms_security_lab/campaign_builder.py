@@ -154,7 +154,11 @@ class CampaignRunner:
             self.signature,
         )
         evidence_path = self.output_dir / "evidence.jsonl"
-        if self.checkpoint.stale:
+        self.evidence_store = EvidenceStore(evidence_path)
+
+        # A fresh clone can contain committed evidence without its gitignored
+        # checkpoint. Treat either source as authoritative for staleness.
+        if self.checkpoint.stale or self._evidence_is_stale():
             if evidence_path.exists():
                 stale_path = self.output_dir / "evidence.stale.jsonl"
                 if stale_path.exists():
@@ -165,11 +169,29 @@ class CampaignRunner:
                 self.output_dir / "checkpoint.json",
                 self.signature,
             )
+            self.evidence_store = EvidenceStore(evidence_path)
+        else:
+            # Rebuild missing or partial checkpoint state from the matching
+            # evidence chain so recorded cases are resumed, not duplicated.
+            self._reconcile_checkpoint_from_evidence()
 
-        self.evidence_store = EvidenceStore(evidence_path)
         self.findings = FindingRegistry()
         self.remediation = RemediationWorkflow()
         self._restore_response_state()
+
+    def _evidence_is_stale(self) -> bool:
+        """Return True when existing evidence belongs to another signature."""
+        for record in self.evidence_store.records:
+            recorded = record.preconditions.get("campaign_signature")
+            if recorded is not None and recorded != self.signature:
+                return True
+        return False
+
+    def _reconcile_checkpoint_from_evidence(self) -> None:
+        """Rebuild completed status from evidence without re-executing cases."""
+        for record in self.evidence_store.records:
+            if record.test_id not in self.checkpoint.completed:
+                self.checkpoint.mark(record.test_id, record.status)
 
     def run(self, max_new_cases: int | None = None) -> CampaignSummary:
         newly_executed = 0
@@ -330,7 +352,8 @@ class CampaignRunner:
 
         if case.retest_root_cause and observation.status == "PASS":
             finding = self._finding_by_root_cause(case.retest_root_cause)
-            if finding is None:
+            if finding is None or finding.status is FindingStatus.CLOSED:
+                # Restoring or replaying an already-closed retest is idempotent.
                 return
             if finding.status is FindingStatus.OPEN:
                 self.remediation.apply(
@@ -384,7 +407,11 @@ class CampaignRunner:
                     executor=DeterministicScenarioExecutor("PASS", "Restored retest"),
                     retest_root_cause=str(retest_root),
                 )
-                self._process_response(case, CampaignObservation("PASS", "Restored retest"), record.record_hash)
+                self._process_response(
+                    case,
+                    CampaignObservation("PASS", "Restored retest"),
+                    record.record_hash,
+                )
 
     def _finding_by_root_cause(self, root_cause: str) -> Finding | None:
         return next(
