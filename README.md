@@ -106,7 +106,7 @@ The checkpoint is bound to the campaign definition and code version. A changed c
 | Evidence store | Persist complete records with SHA-256 hash chaining and campaign digest |
 | Finding workflow | Deduplicate root causes and require a passing retest before closure |
 
-## Interview-ready design explanation
+## Architecture and Design Rationale
 
 > I designed the project as layers instead of one large script. Immutable domain objects carry the exact input. Specialized validators evaluate one security responsibility at a time. The control decision stays separate from execution, so a validator cannot directly change trusted BMS state or execute a command. A campaign runner injects the test cases, isolates exceptions, checkpoints progress, and creates traceable evidence. Failures can produce structured security events, mode-aware safe-state actions, and findings. A finding remains open after remediation and closes only when a new linked retest passes. This structure lets me add another threat or validator without rewriting the complete framework.
 
