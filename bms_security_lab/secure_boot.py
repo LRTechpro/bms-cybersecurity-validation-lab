@@ -46,6 +46,7 @@ class SecureBootVerifier:
     ) -> None:
         self.key_store = key_store
         self.crypto_provider = crypto_provider
+        self.events: list[str] = []
 
     def verify_package(
         self,
@@ -53,7 +54,6 @@ class SecureBootVerifier:
         context: BootVerificationContext,
     ) -> BootDecision:
         reasons: list[str] = []
-        manifest: FirmwareManifest | None = None
 
         try:
             manifest = FirmwareManifest.from_stored_bytes(package.manifest_bytes)
@@ -65,18 +65,19 @@ class SecureBootVerifier:
         if context.now_s > manifest.expires_at_s:
             reasons.append("Manifest is expired.")
 
+        signer_lifecycle_failure = False
         if not self.key_store.is_known(manifest.signer_id):
             reasons.append("Manifest signer is unknown.")
+            signer_lifecycle_failure = True
         elif self.key_store.is_revoked(manifest.signer_id):
             reasons.append("Manifest signer is revoked.")
+            signer_lifecycle_failure = True
 
         trusted_key = self.key_store.get_current_key(
             manifest.signer_id,
             context.now_s,
         )
-        if trusted_key is None and not any(
-            word in reason for reason in reasons for word in ("unknown", "revoked")
-        ):
+        if trusted_key is None and not signer_lifecycle_failure:
             reasons.append("Signer key is outside its validity interval.")
 
         if trusted_key is not None:
@@ -109,10 +110,10 @@ class SecureBootVerifier:
         if context.hardware_profile not in manifest.hardware_profiles:
             reasons.append("Firmware is incompatible with the hardware profile.")
 
-        if (
+        rollback_requested = (
             manifest.security_version < context.accepted_security_version
-            and not context.recovery_authorized
-        ):
+        )
+        if rollback_requested and not context.recovery_authorized:
             reasons.append("Firmware security version violates anti-rollback policy.")
 
         if reasons:
@@ -122,6 +123,11 @@ class SecureBootVerifier:
                 execute_allowed=False,
                 reasons=tuple(reasons),
                 manifest=manifest,
+            )
+
+        if rollback_requested and context.recovery_authorized:
+            self.events.append(
+                f"AUTHORIZED_RECOVERY_ROLLBACK:{manifest.firmware_id}"
             )
 
         token = VerificationToken(
