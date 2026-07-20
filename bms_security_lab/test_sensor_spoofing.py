@@ -2,10 +2,10 @@
 import unittest
 
 # Import the BMS objects used by the sensor-spoofing tests.
-from bms_security_lab.sensor_reading import BatterySensorReading
-from bms_security_lab.spoofing_demo import apply_reading_if_valid
-from bms_security_lab.trusted_state import TrustedBMSState
-from bms_security_lab.validator import BMSValidator
+from .sensor_reading import BatterySensorReading
+from .spoofing_demo import apply_reading_if_valid
+from .trusted_state import TrustedBMSState
+from .validator import BMSValidator
 
 
 class TestSensorSpoofing(unittest.TestCase):
