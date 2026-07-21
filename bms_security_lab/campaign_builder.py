@@ -450,16 +450,21 @@ def build_default_campaign() -> list[CampaignCase]:
         goal: str,
         requirement: str,
         controls: tuple[str, ...],
+        overrides: dict[int, tuple[str, tuple[str, ...]]] | None = None,
     ) -> None:
         for number, scenario in enumerate(scenarios, start=1):
+            case_requirement, case_controls = (overrides or {}).get(
+                number,
+                (requirement, controls),
+            )
             cases.append(
                 CampaignCase(
                     test_id=f"{prefix}-{number:03d}",
                     category=category,
                     tara_id=tara,
                     cybersecurity_goal_id=goal,
-                    requirement_id=requirement,
-                    architecture_control_ids=controls,
+                    requirement_id=case_requirement,
+                    architecture_control_ids=case_controls,
                     scenario=scenario,
                     expected_status="PASS",
                     executor=DeterministicScenarioExecutor(
@@ -484,7 +489,11 @@ def build_default_campaign() -> list[CampaignCase]:
         "TARA-001",
         "CG-001",
         "BMS-SEC-SEN-001",
-        ("AC-001", "AC-002", "AC-003"),
+        ("AC-001", "AC-003"),
+        overrides={
+            4: ("BMS-SEC-SEN-002", ("AC-002", "AC-008")),
+            5: ("BMS-SEC-SEN-003", ("AC-002", "AC-003")),
+        },
     )
     cases.append(
         CampaignCase(
@@ -521,6 +530,10 @@ def build_default_campaign() -> list[CampaignCase]:
         "CG-001",
         "BMS-SEC-COM-001",
         ("AC-001", "AC-007"),
+        overrides={
+            7: ("BMS-SEC-COM-002", ("AC-001", "AC-010")),
+            8: ("BMS-SEC-COM-002", ("AC-001", "AC-010")),
+        },
     )
     add_group(
         "CAN",
@@ -550,6 +563,10 @@ def build_default_campaign() -> list[CampaignCase]:
         "CG-006",
         "BMS-SEC-AVA-001",
         ("AC-007", "AC-008", "AC-009"),
+        overrides={
+            3: ("BMS-SEC-AVA-002", ("AC-007", "AC-009")),
+            4: ("BMS-SEC-AVA-002", ("AC-007", "AC-009")),
+        },
     )
     add_group(
         "CMD",
@@ -566,6 +583,12 @@ def build_default_campaign() -> list[CampaignCase]:
         "CG-002",
         "BMS-SEC-CMD-001",
         ("AC-004", "AC-008"),
+        overrides={
+            2: ("BMS-SEC-CMD-002", ("AC-004", "AC-008")),
+            3: ("BMS-SEC-CMD-002", ("AC-004", "AC-008")),
+            4: ("BMS-SEC-CMD-002", ("AC-004", "AC-008")),
+            5: ("BMS-SEC-COM-001", ("AC-004", "AC-007")),
+        },
     )
     add_group(
         "DIAG",
@@ -581,7 +604,13 @@ def build_default_campaign() -> list[CampaignCase]:
         "TARA-003",
         "CG-003",
         "BMS-SEC-DIA-001",
-        ("AC-005", "AC-009", "AC-010"),
+        ("AC-005", "AC-010"),
+        overrides={
+            3: ("BMS-SEC-DIA-003b", ("AC-005", "AC-006", "AC-008")),
+            4: ("BMS-SEC-DIA-002", ("AC-005", "AC-009")),
+            5: ("BMS-SEC-DIA-003b", ("AC-005", "AC-006", "AC-008")),
+            6: ("BMS-SEC-DIA-003a", ("AC-005", "AC-006", "AC-008")),
+        },
     )
     add_group(
         "CFG",
@@ -596,7 +625,10 @@ def build_default_campaign() -> list[CampaignCase]:
         "TARA-005",
         "CG-005",
         "BMS-SEC-CFG-001",
-        ("AC-006", "AC-009"),
+        ("AC-006",),
+        overrides={
+            5: ("BMS-SEC-CFG-002", ("AC-006", "AC-009")),
+        },
     )
     add_group(
         "FW",
@@ -611,7 +643,13 @@ def build_default_campaign() -> list[CampaignCase]:
         "TARA-004",
         "CG-004",
         "BMS-SEC-FW-001",
-        ("AC-006", "AC-008", "AC-010"),
+        ("AC-006", "AC-010"),
+        overrides={
+            2: ("BMS-SEC-FW-005a", ("AC-006", "AC-008", "AC-010")),
+            3: ("BMS-SEC-FW-005a", ("AC-006", "AC-008", "AC-010")),
+            4: ("BMS-SEC-FW-002", ("AC-006",)),
+            5: ("BMS-SEC-FW-003", ("AC-006", "AC-008")),
+        },
     )
     add_group(
         "NET",
@@ -647,7 +685,7 @@ def build_default_campaign() -> list[CampaignCase]:
             tara_id="TARA-008",
             cybersecurity_goal_id="CG-008",
             requirement_id="BMS-SEC-EVI-002",
-            architecture_control_ids=("AC-008", "AC-009"),
+            architecture_control_ids=("AC-009",),
             scenario="One campaign executor raises an unexpected exception",
             expected_status="ERROR",
             executor=ExceptionScenarioExecutor(),
@@ -660,7 +698,7 @@ def build_default_campaign() -> list[CampaignCase]:
             tara_id="TARA-001",
             cybersecurity_goal_id="CG-001",
             requirement_id="BMS-SEC-SEN-001",
-            architecture_control_ids=("AC-001", "AC-003", "AC-009"),
+            architecture_control_ids=("AC-001", "AC-003"),
             scenario="Retest after enforcing validation before trusted-state update",
             expected_status="PASS",
             executor=DeterministicScenarioExecutor(

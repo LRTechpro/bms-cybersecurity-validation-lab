@@ -33,10 +33,10 @@ The modeled BMS includes:
 
 ## 3. Secondary BESS Extension
 
-A stationary Battery Energy Storage System extension will be
-introduced during later phases.
+A stationary Battery Energy Storage System extension is modeled as
+a separate, optional policy-focused scope.
 
-The BESS extension may include:
+The BESS extension includes representations of:
 
 - Power Conversion System or inverter
 - Energy Management System
@@ -47,7 +47,7 @@ The BESS extension may include:
 - Site-network trust boundaries
 
 The BESS extension remains separate from the primary vehicle-BMS
-model until its corresponding project phase begins.
+model and does not claim live site or production protocol validation.
 
 ## 4. Inside the System Boundary
 
@@ -91,7 +91,8 @@ This project assumes:
 - Inputs are deterministic and reproducible.
 - Sensor thresholds are generic configurable training values.
 - Authentication is initially represented through object metadata.
-- Cryptographic verification will be introduced in a later phase.
+- Cryptographic verification uses local Ed25519 public-key checks and
+  SHA-256 image integrity with disposable test signing keys.
 - No proprietary battery algorithm or chemistry profile is modeled.
 - All malicious inputs are generated inside an authorized simulation.
 
