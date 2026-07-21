@@ -73,3 +73,7 @@ Observed results:
 The Foundation Gate cross-file validation passed, and the existing regression baseline remains operational.
 
 The Foundation Gate is approved as the simulation-based project baseline for Phase 4.
+
+## Current Automated Reverification
+
+The original review result above records the baseline available on July 19, 2026. The repository now runs `python -m bms_security_lab.artifact_validator` in CI before the regression suite. The gate checks artifact schemas, unique identifiers, cross-file references, complete requirement traceability, and campaign references. As of July 21, 2026, the gate passes and the regression suite reports 138 tests passed with no collection warnings.

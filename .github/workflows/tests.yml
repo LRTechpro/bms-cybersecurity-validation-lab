@@ -22,5 +22,8 @@ jobs:
       - name: Install test dependencies
         run: python -m pip install --upgrade pip -r requirements-dev.txt
 
+      - name: Validate engineering artifact traceability
+        run: python -m bms_security_lab.artifact_validator
+
       - name: Run regression suite
         run: python -m pytest -q

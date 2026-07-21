@@ -5,6 +5,9 @@ from .test_case import ValidationTestCase
 class TestRunner:
     """Run tests independently so one ERROR cannot stop the campaign."""
 
+    # This is framework support code, not a pytest test container.
+    __test__ = False
+
     def __init__(
         self,
         test_cases: list[ValidationTestCase],
