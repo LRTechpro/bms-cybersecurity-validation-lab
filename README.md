@@ -105,7 +105,7 @@ flowchart TD
 | [`docs/repository_guide.md`](bms_security_lab/docs/repository_guide.md) | Folder structure, execution flow, and suggested reviewer path |
 | [`artifact_validator.py`](bms_security_lab/artifact_validator.py) | Automated integrity checks for the engineering baseline |
 | [`campaign_builder.py`](bms_security_lab/campaign_builder.py) | Campaign execution, resume, evidence, finding, remediation, and retest orchestration |
-| [`evidence/capstone/`](bms_security_lab/evidence/capstone/) | Preserved v1.0.0 reference evidence and human-readable report |
+| [`evidence/capstone/`](bms_security_lab/evidence/capstone/) | Preserved v1.1.0 reference evidence and human-readable report |
 
 ## Install and verify
 
